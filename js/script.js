@@ -48,18 +48,8 @@ switch(true) {
 let arrWeek = {
 	'ru': ru,
     'en': en,
-    '$': confirm('Попробуте еще раз'),
 };
 console.log(arrWeek[lang]);
-
-
-
-a = new Array(
-{"attr1":"text1","attr2":"text2"},
-{"attr1":"text3","attr2":"text4"}
-);
-alert( a[0].attr1 );   //Выведет "text1"
-alert( a[1].attr2 );   //Выведет "text4"
 
 
 
