@@ -9,15 +9,13 @@ function getType(a) {
     switch(true) {
         case (typeof a !== 'string'):
             alert('This is not a text!!!');
-        break;
-        default:
-        a = a.trim();
-    }
-    switch(true) {
-        case (a.length > 30):
+        break; 
+        case (typeof a == 'string' && a.length > 30):
+            a = a.trim();
             alert((a.substring(0, 30)) + '...');
             break;
         default:
+            a = a.trim();
             alert(a);
         }
     }
@@ -25,3 +23,6 @@ function getType(a) {
 getType(num);
 getType(txt);
 getType(short);
+
+
+    
